@@ -1,7 +1,11 @@
-import {add} from '../math';
+import {sortArray} from '../math';
 
 describe("Math functions", ()=>{
-    it("should add two numbers correctly", ()=>{
-        expect(add(1,2)).toEqual(3);
+    const col1 = [2,8,9,45];
+    const col2 = [71,56,43,2,7];
+    const col3 = [0,1,45,56];
+    const expectAns = [0, 1, 2, 2, 7, 8, 9, 43, 45, 45, 56, 56, 71];
+    it("should be the same as Expect value", ()=>{
+        expect(expectAns === sortArray(col1,col2,col3));
     });
 });
