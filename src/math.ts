@@ -14,7 +14,7 @@ export function sortArray(col1:number[], col2:number[], col3:number[]):number[]{
         }
     }
     
-    console.log('answer: ',mergeArray);
+    // console.log('answer: ',mergeArray);
     return mergeArray;
 }
 
